@@ -137,20 +137,18 @@
 
     <script type="text/javascript">
   
-  var PACKAGE_NAME = './atariprojects/A8E.data';
+  var PACKAGE_NAME = './fastbasic/A8E.data';
 
   function performDataRequests(DataRequest) {
     new DataRequest(0, 8192, 0, 0).open('GET', '/data/ATARIBAS.ROM');
     new DataRequest(8192, 24576, 0, 0).open('GET', '/data/ATARIXL.ROM');
-    new DataRequest(24576, 116752, 0, 0).open('GET', '/data/scrolling.atr');
-    new DataRequest(116752, 208928, 0, 0).open('GET', '/data/flip.atr');
+    new DataRequest(24576, 157712, 0, 0).open('GET', '/data/fastbasic.atr');
   }
 
   function performDataRequestLoads(DataRequest) {
     DataRequest.prototype.requests["/data/ATARIBAS.ROM"].onload();
     DataRequest.prototype.requests["/data/ATARIXL.ROM"].onload();
-    DataRequest.prototype.requests["/data/scrolling.atr"].onload();
-    DataRequest.prototype.requests["/data/flip.atr"].onload();
+    DataRequest.prototype.requests["/data/fastbasic.atr"].onload();
   }
 
 	function get_url_param( name )
