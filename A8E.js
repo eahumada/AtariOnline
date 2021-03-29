@@ -120,6 +120,7 @@ Module['FS_createPath']('/', 'data', true, true);
       new DataRequest(0, 8192, 0, 0).open('GET', '/data/ATARIBAS.ROM');
       new DataRequest(8192, 24576, 0, 0).open('GET', '/data/ATARIXL.ROM');
       new DataRequest(24576, 116752, 0, 0).open('GET', '/data/scrolling.atr');
+      new DataRequest(116752, 208928, 0, 0).open('GET', '/data/flip.atr');
 
     function processPackageData(arrayBuffer) {
       Module.finishedDataFileDownloads++;
@@ -134,6 +135,7 @@ Module['FS_createPath']('/', 'data', true, true);
       DataRequest.prototype.requests["/data/ATARIBAS.ROM"].onload();
       DataRequest.prototype.requests["/data/ATARIXL.ROM"].onload();
       DataRequest.prototype.requests["/data/scrolling.atr"].onload();
+      DataRequest.prototype.requests["/data/flip.atr"].onload();
 
       Module['removeRunDependency']('datafile_A8E.data');
 
