@@ -14,7 +14,7 @@ Fun projects for your Atari 8-bit home computers and video game consoles, you ca
 
 ## Atari BASIC
 
-[Basic](https://eahumada.github.io/basic/?)
+[Basic](https://eahumada.github.io/AtariOnline/basic.html?)
 
 ## FastBasic Demos
 
