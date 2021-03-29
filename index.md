@@ -8,7 +8,7 @@ This project have as objective allow to share and publish live atari 8-bit conte
 
 Fun projects for your Atari 8-bit home computers and video game consoles, you can read the articles [here](http://atariprojects.org/)
 
-[Flip Screen](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=scrolling.atr)
+[Screen Flipping](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=scrolling.atr)
 
 [Horizontal Scrolling](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=flip.atr)
 
