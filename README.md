@@ -3,7 +3,7 @@
 
 HOW-TO:
 
-# 1. Agregar un programa ATR al emular.
+# 1. Add ATR images to the emulator.
 
 See buildimg.sh.
 
