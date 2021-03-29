@@ -120,8 +120,11 @@
     <pre style="text-align: center">Nota: Por favor espere que el emulador descargue completamente.</pre>
     <pre style="text-align: center">Controles: F1 = HELP, F2 = OPTION, F3 = SELECT, F4 = START, F5 = RESET</pre>
     <pre style="text-align: center">FLECHAS = direccions de joystick, ALT = disparo.</pre>
-
-    
+      
+    <div class="emscripten_border">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" width="800" height="600" style="background-color: black;"></canvas>
+    </div>
+   
     <div class="spinner" id="spinner" style="display: none;"></div>
     <div class="emscripten" id="status" style="display: none;"></div>
 
@@ -129,11 +132,6 @@
       <progress value="0" max="0" id="progress" hidden=""></progress>
     </div>
 
-    
-    <div class="emscripten_border">
-      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" width="800" height="600" style="background-color: black;"></canvas>
-    </div>
-    
     <textarea id="output" rows="4" style="display: none;">
     </textarea>
 
