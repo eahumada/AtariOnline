@@ -7,6 +7,7 @@ This project have as objective allow to share and publish live atari 8-bit conte
 ## Atari Projects
 
 [Flip Screen](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=scrolling.atr)
+
 [Horizontal Scrolling](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=flip.atr)
 
 ## Atari BASIC
@@ -19,9 +20,10 @@ This project have as objective allow to share and publish live atari 8-bit conte
 
 Try : JOYAS.COM
 
-## Logo
+## Atari Logo
 
 [Logo English](https://eahumada.github.io/logospa/?disk_filename=logo.atr)
+
 [Logo Spanish](https://eahumada.github.io/logospa/?disk_filename=logoatari.atr)
 
 
