@@ -9,7 +9,7 @@ Fun projects for your Atari 8-bit home computers and video game consoles, you ca
 
 ## FastBasic Demos
 
-[FastBasic](https://eahumada.github.io/AtariOnline/fastbasic.html?disk_filename=fastbasic.atr)
+[Live FastBasic Demos](https://eahumada.github.io/AtariOnline/fastbasic.html?disk_filename=fastbasic.atr)
 
 ```
 To list all demos:
@@ -18,11 +18,11 @@ DIR *.COM [Return]
 
 ## Atari BASIC
 
-[Basic](https://eahumada.github.io/AtariOnline/basic.html?)
+[Live Atari Basic](https://eahumada.github.io/AtariOnline/basic.html?)
 
 ## Atari Assembler
 
-[Basic](https://eahumada.github.io/AtariOnline/basic.html?)
+[Live Atari Assembler Editor](https://eahumada.github.io/AtariOnline/basic.html?)
 Type:
 ```
 ENTER #D:ATASM01.ASM [Return]
