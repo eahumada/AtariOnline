@@ -11,10 +11,10 @@ Fun projects for your Atari 8-bit home computers and video game consoles, you ca
 
 [FastBasic](https://eahumada.github.io/AtariOnline/fastbasic.html?disk_filename=fastbasic.atr)
 
-'''
+```
 To list all demos:
 DIR *.COM [Return]
-'''
+```
 
 ## Atari BASIC
 
@@ -24,13 +24,13 @@ DIR *.COM [Return]
 
 [Basic](https://eahumada.github.io/AtariOnline/basic.html?)
 Type:
-'''
+```
 ENTER #D:ATASM01.ASM [Return]
 ASM [Return]
 BUG [Return]
 S1000 [Return]
 S [Return]
-'''
+```
 (repeat S until you reach the BRK)
 
 ## Atari Logo
