@@ -9,10 +9,13 @@ Fun projects for your Atari 8-bit home computers and video game consoles, you ca
 
 ## FastBasic Demos
 
-[Live FastBasic Demos](https://eahumada.github.io/AtariOnline/fastbasic.html?disk_filename=fastbasic.atr) Type: JOYAS.COM
+[Live FastBasic Demos](https://eahumada.github.io/AtariOnline/fastbasic.html?disk_filename=fastbasic.atr) 
+
+- Type: PMTEST.COM
+- Type: JOYAS.COM
 
 ```
-To list runnable all demos:
+To list all demos:
 DIR *.COM [Return]
 ```
 
