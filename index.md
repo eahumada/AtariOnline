@@ -1,68 +1,40 @@
-# Atari Online
-
 This project have as objective allow to share and publish live atari 8-bit content to the web.
 
-## Welcome to Atari Online - GitHub Pages
-
-## [Atari Projects](http://atariprojects.org/)
+## [Live tutorials from Atari Projects](http://atariprojects.org/)
 
 Fun projects for your Atari 8-bit home computers and video game consoles, you can read the articles [here](http://atariprojects.org/)
 
-[Screen Flipping](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=scrolling.atr)
-
-[Horizontal Scrolling](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=flip.atr)
-
-## Atari BASIC
-
-[Basic](https://eahumada.github.io/AtariOnline/basic.html?)
+- [Screen Flipping](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=scrolling.atr) Type: RUN "D:HSCROLL.BAS" [Return]
+- [Horizontal Scrolling](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=flip.atr) Type: RUN "D:FLIP.BAS [Return]
 
 ## FastBasic Demos
 
 [FastBasic](https://eahumada.github.io/AtariOnline/fastbasic.html?disk_filename=fastbasic.atr)
 
-Try : JOYAS.COM
+'''
+To list all demos:
+DIR *.COM [Return]
+'''
+
+## Atari BASIC
+
+[Basic](https://eahumada.github.io/AtariOnline/basic.html?)
+
+## Atari Assembler
+
+[Basic](https://eahumada.github.io/AtariOnline/basic.html?)
+Type:
+'''
+ENTER #D:ATASM01.ASM [Return]
+ASM [Return]
+BUG [Return]
+S1000 [Return]
+S [Return]
+'''
+(repeat S until you reach the BRK)
 
 ## Atari Logo
 
 [Logo English](https://eahumada.github.io/logospa/?disk_filename=logo.atr)
 
 [Logo Spanish](https://eahumada.github.io/logospa/?disk_filename=logoatari.atr)
-
-
-# Authors Section
-
-You can use the [editor on GitHub](https://github.com/eahumada/AtariOnline/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/eahumada/AtariOnline/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
