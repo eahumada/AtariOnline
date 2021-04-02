@@ -27,7 +27,7 @@ DIR *.COM [Return]
 
 Based on the great videos from [8-bit and more](https://www.youtube.com/watch?v=gOIa6_2_sxw), here is a live environmet to practice the coding shown in the presentations (you have to try all symbols keys mapping depending on you keyboard layout).
 
-[Live Atari Assembler Editor](https://eahumada.github.io/AtariOnline/assembler.html?)
+[Live Atari Assembler Editor](https://eahumada.github.io/AtariOnline/assembler.html?disk_filename=atariassembler.atr)
 Type:
 ```
 ENTER #D:ATASM01.ASM [Return]
