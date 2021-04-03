@@ -4,14 +4,16 @@ This project have as objective allow to share and publish live atari 8-bit conte
 
 Fun projects for your Atari 8-bit home computers and video game consoles, you can read the articles [here](http://atariprojects.org/)
 
-- [Screen Flipping](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=flip.atr) Type: RUN "D:FLIP.BAS" [Return]
-- [Horizontal Scrolling](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=scrolling.atr) Type: RUN "D:HSCROLL.BAS [Return]
+- Screen Flipping [jsA8E](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=flip.atr) [MAME](https://eahumada.github.io/AtariOnline/atariprojects/basic-mame.html) Type: RUN "D:FLIP.BAS" [Return]
+- Horizontal Scrolling [jsA8E](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=scrolling.atr) [MAME](https://eahumada.github.io/AtariOnline/atariprojects/basic-mame.html) Type: RUN "D:HSCROLL.BAS [Return]
+
 
 ## Atari Assembler
 
 Based on the great videos from [8-bit and more](https://www.youtube.com/watch?v=gOIa6_2_sxw), here is a live environment to practice the coding tutorials.
 
-[Live Atari Assembler Editor](https://eahumada.github.io/AtariOnline/assembler.html?disk_filename=atariassembler.atr)
+[Live Atari Assembler Editor](https://eahumada.github.io/AtariOnline/assembler/assembler-mame.html) [jsA8E](https://eahumada.github.io/AtariOnline/assembler.html?disk_filename=atariassembler.atr)
+[MAME] (https://eahumada.github.io/AtariOnline/assembler.assembler-mame.html)
 
 Simple loop:
 ```
@@ -33,7 +35,7 @@ G500B
 
 ## FastBasic Demos
 
-[Live FastBasic Demos](https://eahumada.github.io/AtariOnline/fastbasic.html?disk_filename=fastbasic.atr) 
+[Live FastBasic Demos](https://eahumada.github.io/AtariOnline/fastbasic/fastbasic-mame.html) 
 
 - Type: PMTEST.COM
 - Type: JOYAS.COM
@@ -45,10 +47,11 @@ DIR *.COM [Return]
 
 ## Atari BASIC
 
-[Live Atari Basic](https://eahumada.github.io/AtariOnline/basic.html?)
+[Atari Basic Online](https://eahumada.github.io/AtariOnline/basic/basic-mame.html?)
+[Goblin Online](https://eahumada.github.io/AtariOnline/basic/goblin-mame.html?)
 
 ## Atari Logo
 
-[Logo English](https://eahumada.github.io/logospa/?disk_filename=logo.atr)
+[Logo English](https://eahumada.github.io/logo/logoeng-mame.html)
 
-[Logo Spanish](https://eahumada.github.io/logospa/?disk_filename=logoatari.atr)
+[Logo Spanish](https://eahumada.github.io/logo/logospa-mame.html)
