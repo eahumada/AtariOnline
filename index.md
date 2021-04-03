@@ -1,5 +1,16 @@
 This project have as objective allow to share and publish live atari 8-bit content to the web.
 
+## Atari BASIC
+
+- [Atari Basic Online](https://eahumada.github.io/AtariOnline/basic/basic-mame.html?)
+- [Goblin Online](https://eahumada.github.io/AtariOnline/basic/goblin-mame.html?)
+
+
+## Atari Logo
+
+- [Logo English](https://eahumada.github.io/logo/logoeng-mame.html)
+- [Logo Spanish](https://eahumada.github.io/logo/logospa-mame.html)
+
 ## [Live tutorials from Atari Projects](http://atariprojects.org/)
 
 Fun projects for your Atari 8-bit home computers and video game consoles, you can read the articles [here](http://atariprojects.org/)
@@ -45,13 +56,3 @@ To list all demos:
 DIR *.COM [Return]
 ```
 
-## Atari BASIC
-
-[Atari Basic Online](https://eahumada.github.io/AtariOnline/basic/basic-mame.html?)
-[Goblin Online](https://eahumada.github.io/AtariOnline/basic/goblin-mame.html?)
-
-## Atari Logo
-
-[Logo English](https://eahumada.github.io/logo/logoeng-mame.html)
-
-[Logo Spanish](https://eahumada.github.io/logo/logospa-mame.html)
