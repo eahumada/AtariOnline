@@ -7,22 +7,6 @@ Fun projects for your Atari 8-bit home computers and video game consoles, you ca
 - [Screen Flipping](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=flip.atr) Type: RUN "D:FLIP.BAS" [Return]
 - [Horizontal Scrolling](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=scrolling.atr) Type: RUN "D:HSCROLL.BAS [Return]
 
-## FastBasic Demos
-
-[Live FastBasic Demos](https://eahumada.github.io/AtariOnline/fastbasic.html?disk_filename=fastbasic.atr) 
-
-- Type: PMTEST.COM
-- Type: JOYAS.COM
-
-```
-To list all demos:
-DIR *.COM [Return]
-```
-
-## Atari BASIC
-
-[Live Atari Basic](https://eahumada.github.io/AtariOnline/basic.html?)
-
 ## Atari Assembler
 
 Based on the great videos from [8-bit and more](https://www.youtube.com/watch?v=gOIa6_2_sxw), here is a live environment to practice the coding tutorials.
@@ -46,6 +30,22 @@ ASM
 BUG
 G500B
 ```
+
+## FastBasic Demos
+
+[Live FastBasic Demos](https://eahumada.github.io/AtariOnline/fastbasic.html?disk_filename=fastbasic.atr) 
+
+- Type: PMTEST.COM
+- Type: JOYAS.COM
+
+```
+To list all demos:
+DIR *.COM [Return]
+```
+
+## Atari BASIC
+
+[Live Atari Basic](https://eahumada.github.io/AtariOnline/basic.html?)
 
 ## Atari Logo
 
