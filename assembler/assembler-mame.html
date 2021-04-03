@@ -1,0 +1,41 @@
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>example computer program</title>
+  </head>
+  <body>
+    <canvas id="canvas" style="width: 50%; height: 50%; display: block; margin: 0 auto;"/>
+    <script type="text/javascript" src="../js/emularity/es6-promise.js"></script>
+    <script type="text/javascript" src="../js/emularity/browserfs.min.js"></script>
+    <script type="text/javascript" src="../js/emularity/loader.js"></script>
+    <script type="text/javascript">
+      var emulator = new Emulator(document.querySelector("#canvas"),
+                                  null,
+                                  new JSMESSLoader(JSMESSLoader.driver("a800xl"),
+                                                   JSMESSLoader.nativeResolution(672, 450),
+                                                   JSMESSLoader.scale(1),
+                                                   JSMESSLoader.emulatorJS("../js/emulators/mame/a800xl.js"),
+                                                   JSMESSLoader.emulatorWASM("../js/emulators/mame/a800xl.wasm"),
+                                                   JSMESSLoader.mountFile("a800xl.zip",
+                                                                          JSMESSLoader.fetchFile("Bios",
+                                                                                                 "../emulators/mame/a800xl.zip")),
+                                                   JSMESSLoader.mountFile("a800xl.cfg",
+                                                                          JSMESSLoader.fetchFile("Config",
+                                                                                                 "../emulators/mame/a800xl.cfg")),
+                                                   JSMESSLoader.mountFile("atariassembler.atr",
+                                                                          JSMESSLoader.fetchFile("Disk",
+                                                                                                 "atariassembler.atr")),
+                                                   JSMESSLoader.mountFile("atariasm.rom",
+                                                                          JSMESSLoader.fetchFile("Rom",
+                                                                                                 "atariasm.rom")),                                                                                                
+                                                   JSMESSLoader.peripheral("flop1", "atariassembler.atr"),
+                                                   JSMESSLoader.peripheral("cart1", "atariasm.rom"),                                                  
+                                                   JSMESSLoader.extraArgs([""]))
+                                                   //JSMESSLoader.extraArgs(["-cart1", "atariasm.rom"]))
+                                                   )
+      emulator.mute();
+      emulator.start({ waitAfterDownloading: false });
+    </script>
+  </body>
+</html>

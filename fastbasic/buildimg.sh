@@ -4,7 +4,7 @@ cat ATARIBAS.ROM > A8E.data
 wc -c < A8E.data
 cat ATARIXL.ROM >> A8E.data
 wc -c < A8E.data
-cat fastbasic-v4.5.2.atr >> A8E.data
+cat fastbasic.atr >> A8E.data
 wc -c < A8E.data
 
 # to extract an image from .data : 
