@@ -8,8 +8,8 @@ This project have as objective allow to share and publish live atari 8-bit conte
 
 ## Atari Logo
 
-- [Logo English](https://eahumada.github.io/logo/logoeng-mame.html)
-- [Logo Spanish](https://eahumada.github.io/logo/logospa-mame.html)
+- [Logo English](https://eahumada.github.io/AtariOnline/logo/logoeng-mame.html)
+- [Logo Spanish](https://eahumada.github.io/AtariOnline/logo/logospa-mame.html)
 
 ## [Live tutorials from Atari Projects](http://atariprojects.org/)
 
