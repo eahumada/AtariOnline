@@ -62,7 +62,7 @@ DIR *.COM [Return]
 
 B2FJ is a Virtual Machine intended to run Java bytecode on the 8-bit home computers of the 80s.
 
-Here is the port to Atari playing video and using PM graphics for the dancing bar.
+Here is the port to Atari playing music and using PM graphics for the dancing bar.
 
 This port is capable of multihreading and automatic Garbagge Collection.
 
