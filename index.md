@@ -17,7 +17,7 @@ Fun projects for your Atari 8-bit home computers and video game consoles, you ca
 - Screen Flipping ( [jsA8E](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=flip.atr) ) ([MAME](https://eahumada.github.io/AtariOnline/atariprojects/basic-mame.html)) Type: RUN "D:FLIP.BAS" [Return]
 - Horizontal Scrolling ( [jsA8E](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=scrolling.atr) ) ( [MAME](https://eahumada.github.io/AtariOnline/atariprojects/basic-mame.html) ) Type: RUN "D:HSCROLL.BAS [Return]
 
-## Atari Assembler
+## Atari Assembler Editor
 
 Based on the great videos from [8-bit and more](https://www.youtube.com/watch?v=gOIa6_2_sxw), here is a live environment to practice the coding tutorials.
 
@@ -42,6 +42,10 @@ BUG
 G500B
 ```
 
+## MAC/65 Assembler Editor With DDT
+
+[Live MAC/65 with DDT](https://eahumada.github.io/AtariOnline/mac65/mac65-mame.html) [MAME](https://eahumada.github.io/AtariOnline/mac65/mac65-mame.html) 
+
 ## FastBasic Demos
 
 [Live FastBasic Demos](https://eahumada.github.io/AtariOnline/fastbasic/fastbasic-mame.html) 
@@ -64,4 +68,5 @@ This port is capable of multihreading and automatic Garbagge Collection.
 
 More Info on this [link](https://mzattera.github.io/b2fJ/)
 
-http://localhost:8002/demos/demos-mame.html?disk=b2fj.atr
+[B2FJ Demo](http://localhost:8002/demos/demos-mame.html?disk=b2fj.atr)
+
