@@ -5,7 +5,6 @@ This project have as objective allow to share and publish live atari 8-bit conte
 - [Atari Basic Online](https://eahumada.github.io/AtariOnline/basic/basic-mame.html?)
 - [Goblin Online](https://eahumada.github.io/AtariOnline/basic/goblin-mame.html?)
 
-
 ## Atari Logo
 
 - [Logo English](https://eahumada.github.io/AtariOnline/logo/logoeng-mame.html)
@@ -17,7 +16,6 @@ Fun projects for your Atari 8-bit home computers and video game consoles, you ca
 
 - Screen Flipping ( [jsA8E](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=flip.atr) ) ([MAME](https://eahumada.github.io/AtariOnline/atariprojects/basic-mame.html)) Type: RUN "D:FLIP.BAS" [Return]
 - Horizontal Scrolling ( [jsA8E](https://eahumada.github.io/AtariOnline/atariprojects.html?disk_filename=scrolling.atr) ) ( [MAME](https://eahumada.github.io/AtariOnline/atariprojects/basic-mame.html) ) Type: RUN "D:HSCROLL.BAS [Return]
-
 
 ## Atari Assembler
 
@@ -56,3 +54,12 @@ To list all demos:
 DIR *.COM [Return]
 ```
 
+## B2FJ Virtual Machine
+
+Demo of B2FJ Virtual Machine intended to run on the 8-bit home computers of the 80s.
+
+Here is the port to Atari 8-bits playing video and using PM graphics for the dancing bar.
+
+More Info on this [link](https://mzattera.github.io/b2fJ/)
+
+http://localhost:8002/demos/demos-mame.html?disk=b2fj.atr
