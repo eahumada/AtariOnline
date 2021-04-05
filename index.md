@@ -50,8 +50,8 @@ G500B
 
 [Live FastBasic Demos](https://eahumada.github.io/AtariOnline/fastbasic/fastbasic-mame.html) 
 
-- Type: PMTEST.COM
-- Type: JOYAS.COM
+- Type: PMTEST [Return]
+- Type: JOYAS [Return]
 
 ```
 To list all demos:
