@@ -68,5 +68,5 @@ This port is capable of multihreading and automatic Garbagge Collection.
 
 More Info on this [link](https://mzattera.github.io/b2fJ/)
 
-[B2FJ Demo](http://localhost:8002/demos/demos-mame.html?disk=b2fj.atr)
+[B2FJ Demo](http://eahumada.github.io/AtariOnline/demos/demos-mame.html?disk=b2fj.atr)
 
