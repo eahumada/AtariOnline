@@ -55,8 +55,8 @@
         mountDisk=undefined;
         diskPeripheral=undefined;
       }
-
-      var emulator = new Emulator(document.querySelector("#canvas"),
+      if (disk!="" && cart!="") {
+        var emulator = new Emulator(document.querySelector("#canvas"),
                                   null,
                                   new JSMESSLoader(JSMESSLoader.driver("a800xl"),
                                                    JSMESSLoader.nativeResolution(672, 450),
@@ -75,6 +75,44 @@
                                                    diskPeripheral,
                                                    JSMESSLoader.extraArgs([""]))
                                                    )
+      } else if (cart!="") {
+        var emulator = new Emulator(document.querySelector("#canvas"),
+                                  null,
+                                  new JSMESSLoader(JSMESSLoader.driver("a800xl"),
+                                                   JSMESSLoader.nativeResolution(672, 450),
+                                                   JSMESSLoader.scale(1.2),
+                                                   JSMESSLoader.emulatorJS("../js/emulators/mame/mamea800xl.js"),
+                                                   JSMESSLoader.emulatorWASM("../js/emulators/mame/mamea800xl.wasm"),
+                                                   JSMESSLoader.mountFile("a800xl.zip",
+                                                                          JSMESSLoader.fetchFile("BIOS",
+                                                                                                 "../emulators/mame/a800xl-bd.zip")),
+                                                   JSMESSLoader.mountFile("a800xl.cfg",
+                                                                          JSMESSLoader.fetchFile("Config",
+                                                                                                 "../emulators/mame/a800xl.cfg")),
+                                                   mountCart,
+                                                   cartPeripheral,
+                                                   JSMESSLoader.extraArgs([""]))
+                                                   )
+
+      } else {
+        var emulator = new Emulator(document.querySelector("#canvas"),
+                                  null,
+                                  new JSMESSLoader(JSMESSLoader.driver("a800xl"),
+                                                   JSMESSLoader.nativeResolution(672, 450),
+                                                   JSMESSLoader.scale(1.2),
+                                                   JSMESSLoader.emulatorJS("../js/emulators/mame/mamea800xl.js"),
+                                                   JSMESSLoader.emulatorWASM("../js/emulators/mame/mamea800xl.wasm"),
+                                                   JSMESSLoader.mountFile("a800xl.zip",
+                                                                          JSMESSLoader.fetchFile("BIOS",
+                                                                                                 "../emulators/mame/a800xl-bd.zip")),
+                                                   JSMESSLoader.mountFile("a800xl.cfg",
+                                                                          JSMESSLoader.fetchFile("Config",
+                                                                                                 "../emulators/mame/a800xl.cfg")),
+                                                   mountDisk,
+                                                   diskPeripheral,
+                                                   JSMESSLoader.extraArgs([""]))
+                                                   )
+      }
                                                    
       //  emulator.mute();
 
