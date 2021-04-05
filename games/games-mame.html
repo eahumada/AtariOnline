@@ -41,8 +41,8 @@
       }
       
       if(cart!="") {
-        mountCart = JSMESSLoader.mountFile("cart1",JSMESSLoader.fetchFile("Cartridge",cart));
-        cartPeripheral = JSMESSLoader.peripheral("cart1", "cart1");
+        mountCart = JSMESSLoader.mountFile(cart,JSMESSLoader.fetchFile("Cartridge",cart));
+        cartPeripheral = JSMESSLoader.peripheral("cart1", cart);
       } else {
         mountCart=undefined;
         cartPeripheral=undefined;
