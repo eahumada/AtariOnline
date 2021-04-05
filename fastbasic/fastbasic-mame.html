@@ -14,13 +14,15 @@
       <br></br>
     </div>
     <div id="controls" style="text-align: center">
-        <span style="width: 50%; height: 50%; text-align: center">
-          <input type="checkbox" id="resize">Resize canvas<input type="checkbox"
-            id="pointerLock" checked="">Lock/hide mouse pointer &nbsp;&nbsp;&nbsp;
+        <!-- 
+          <input type="checkbox" id="resize"></input>Resize canvas
+          <input type="checkbox" id="pointerLock" checked=""></input>Lock/hide mouse pointer &nbsp;&nbsp;&nbsp;
             <input type="button" onclick='Module.requestFullscreen(document.getElementById("pointerLock").checked,document.getElementById("resize").checked)' value="Fullscreen"></input>
+        -->
+        <span style="width: 50%; height: 50%; text-align: center">
             <input type="button" onclick='emulator.toggleMute()' value="Mute"></input>      
         </span>
-      </div> 
+    </div> 
     <script type="text/javascript" src="../js/emularity/es6-promise.js"></script>
     <script type="text/javascript" src="../js/emularity/browserfs.min.js"></script>
     <script type="text/javascript" src="../js/emularity/loader.js"></script>
