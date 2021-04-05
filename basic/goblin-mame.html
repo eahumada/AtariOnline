@@ -21,12 +21,12 @@
 
 <body>
   <span id="controls">
-      <span
-      ><input type="checkbox" id="resize">Resize canvas</span><span><input type="checkbox"
-        id="pointerLock" checked="">Lock/hide mouse pointer &nbsp;&nbsp;&nbsp;</span><span><input type="button"
-        onclick='Module.requestFullscreen(document.getElementById("pointerLock").checked,document.getElementById("resize").checked)'
-        value="Fullscreen">
-    </span>
+      <pre>
+        <input type="checkbox" id="resize">Resize canvas</span><span><input type="checkbox"
+        id="pointerLock" checked="">Lock/hide mouse pointer &nbsp;&nbsp;&nbsp;</span><span>
+        <input type="button" onclick='Module.requestFullscreen(document.getElementById("pointerLock").checked,document.getElementById("resize").checked)' value="Fullscreen"></input>
+        <input type="button" onclick='emulator.mute()' value="Mute"></input>
+      </pre>
   </span>
 
   <canvas id="canvas" style="width: 50%; height: 50%; display: block; margin: 0 auto;"></canvas>

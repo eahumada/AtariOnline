@@ -8,8 +8,19 @@
     <h2 style="text-align: center">ATARI ONLINE</h2>
     <pre style="text-align: center">Controls: F1 = HELP, F2 = START, F3 = SELECT, F4 = OPTION</pre>
     <pre style="text-align: center">KEY ARROWS = joystick, LEFT ALT = Fire.</pre>
-    <canvas id="canvas" style="width: 50%; height: 50%; display: block; margin: 0 auto;"></canvas>
-    <img id="keyboard" src="../img/atari-keyboard.jpeg" style="width: 45%; height: 25%;display: block; margin: 0 auto;"></img>
+    <canvas id="canvas" style="width: 50%; height: 50%; display: block; margin: 0 auto;"></canvas>  
+    <img id="keyboard" src="../img/atari-keyboard.jpeg" style="width: 450; height: 150;display: block; margin: 0 auto;"></img>
+    <div>
+      <br></br>
+    </div>
+    <div id="controls" style="text-align: center">
+        <span style="width: 50%; height: 50%; text-align: center">
+          <input type="checkbox" id="resize">Resize canvas<input type="checkbox"
+            id="pointerLock" checked="">Lock/hide mouse pointer &nbsp;&nbsp;&nbsp;
+            <input type="button" onclick='Module.requestFullscreen(document.getElementById("pointerLock").checked,document.getElementById("resize").checked)' value="Fullscreen"></input>
+            <input type="button" onclick='emulator.toggleMute()' value="Mute"></input>      
+        </span>
+      </div> 
     <script type="text/javascript" src="../js/emularity/es6-promise.js"></script>
     <script type="text/javascript" src="../js/emularity/browserfs.min.js"></script>
     <script type="text/javascript" src="../js/emularity/loader.js"></script>
@@ -35,7 +46,7 @@
                                                    JSMESSLoader.extraArgs([""]))
                                                    )
                                                    
-      emulator.mute();
+      //emulator.mute();
 
       emulator.start({ waitAfterDownloading: false });
     </script>
