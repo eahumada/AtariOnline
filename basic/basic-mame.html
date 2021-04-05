@@ -10,7 +10,18 @@
     <script type="text/javascript" src="../js/emularity/es6-promise.js"></script>
     <script type="text/javascript" src="../js/emularity/browserfs.min.js"></script>
     <script type="text/javascript" src="../js/emularity/loader.js"></script>
+    <script type="text/javascript" src="../js/atarionline.js"></script>
     <script type="text/javascript">
+
+      var disk = get_url_param("disk");
+      
+      if(!disk) {
+        disk= "basic-programs.atr";
+      }
+
+      var mountDisk = JSMESSLoader.mountFile("disk1.atr",JSMESSLoader.fetchFile("Disk",disk));
+      var diskPeripheral = JSMESSLoader.peripheral("flop1", "disk1.atr");
+
       var emulator = new Emulator(document.querySelector("#canvas"),
                                   null,
                                   new JSMESSLoader(JSMESSLoader.driver("a800xl"),
@@ -22,10 +33,8 @@
                                                    JSMESSLoader.mountFile("a800xl.cfg",
                                                                           JSMESSLoader.fetchFile("Config",
                                                                                                  "../emulators/mame/a800xl.cfg")),
-                                                   JSMESSLoader.mountFile("basic-programs.atr",
-                                                                          JSMESSLoader.fetchFile("Disk",
-                                                                                                 "basic-programs.atr")),
-                                                   JSMESSLoader.peripheral("flop1", "basic-programs.atr"),
+                                                   mountDisk,
+                                                   diskPeripheral,
                                                    JSMESSLoader.emulatorJS("../js/emulators/mame/mamea800xl.js"),
                                                    JSMESSLoader.emulatorWASM("../js/emulators/mame/mamea800xl.wasm"),
                                                    JSMESSLoader.extraArgs([""]))
