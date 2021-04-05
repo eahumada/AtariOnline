@@ -1,49 +1,61 @@
-
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>AtariOnline - Goblin</title>
-    <meta property="og:image" content="goblin.gif">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" >
-  </head>
-  <style>
-      canvas {
-          border: 0px none; outline: none;
-          tabindex: 0;
-          contentEditable:true;
-          -webkit-user-modify: read-write;
-          -moz-user-modify: read-write;
-          user-modify: read-write;
-      }
-  </style>
-  <body>
-    <canvas id="canvas" style="width: 50%; height: 50%; display: block; margin: 0 auto;"></canvas>
-    <script type="text/javascript" src="../js/emularity/es6-promise.js"></script>
-    <script type="text/javascript" src="../js/emularity/browserfs.min.js"></script>
-    <script type="text/javascript" src="../js/emularity/loader.js"></script>
-    <script type="text/javascript">
-      var emulator = new Emulator(document.querySelector("#canvas"),
-                                  null,
-                                  new JSMESSLoader(JSMESSLoader.driver("a800xl"),
-                                                   JSMESSLoader.nativeResolution(672, 450),
-                                                   JSMESSLoader.scale(1),
-                                                   JSMESSLoader.emulatorJS("../js/emulators/mame/mamea800xl.js"),
-                                                   JSMESSLoader.emulatorWASM("../js/emulators/mame/mamea800xl.wasm"),
-                                                   JSMESSLoader.mountFile("a800xl.zip",
-                                                                          JSMESSLoader.fetchFile("Bios",
-                                                                                                 "../emulators/mame/a800xl.zip")),
-                                                   JSMESSLoader.mountFile("a800xl.cfg",
-                                                                          JSMESSLoader.fetchFile("Config",
-                                                                                                 "../emulators/mame/a800xl.cfg")),
-                                                   JSMESSLoader.mountFile("disk1.atr",
-                                                                          JSMESSLoader.fetchFile("Disk",
-                                                                                                 "goblin.atr")),
-                                                   JSMESSLoader.peripheral("flop1", "disk1.atr"),
-                                                   JSMESSLoader.extraArgs([""]))
-                                                   )
-      //emulator.mute();
-      emulator.start({ waitAfterDownloading: true });
-    </script>
-  </body>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>AtariOnline - Goblin</title>
+  <meta property="og:image" content="goblin.gif">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+<style>
+  canvas {
+    border: 0px none;
+    outline: none;
+    tabindex: 0;
+    contentEditable: true;
+    -webkit-user-modify: read-write;
+    -moz-user-modify: read-write;
+    user-modify: read-write;
+  }
+</style>
+
+<body>
+  <span id="controls">
+      <span
+      ><input type="checkbox" id="resize">Resize canvas</span><span><input type="checkbox"
+        id="pointerLock" checked="">Lock/hide mouse pointer &nbsp;&nbsp;&nbsp;</span><span><input type="button"
+        onclick='Module.requestFullscreen(document.getElementById("pointerLock").checked,document.getElementById("resize").checked)'
+        value="Fullscreen">
+    </span>
+  </span>
+
+  <canvas id="canvas" style="width: 50%; height: 50%; display: block; margin: 0 auto;"></canvas>
+  <script type="text/javascript" src="../js/emularity/es6-promise.js"></script>
+  <script type="text/javascript" src="../js/emularity/browserfs.min.js"></script>
+  <script type="text/javascript" src="../js/emularity/loader.js"></script>
+  <script type="text/javascript">
+    var emulator = new Emulator(document.querySelector("#canvas"),
+      null,
+      new JSMESSLoader(JSMESSLoader.driver("a800xl"),
+        JSMESSLoader.nativeResolution(672, 450),
+        JSMESSLoader.scale(1),
+        JSMESSLoader.emulatorJS("../js/emulators/mame/mamea800xl.js"),
+        JSMESSLoader.emulatorWASM("../js/emulators/mame/mamea800xl.wasm"),
+        JSMESSLoader.mountFile("a800xl.zip",
+          JSMESSLoader.fetchFile("Bios",
+            "../emulators/mame/a800xl.zip")),
+        JSMESSLoader.mountFile("a800xl.cfg",
+          JSMESSLoader.fetchFile("Config",
+            "../emulators/mame/a800xl.cfg")),
+        JSMESSLoader.mountFile("disk1.atr",
+          JSMESSLoader.fetchFile("Disk",
+            "goblin.atr")),
+        JSMESSLoader.peripheral("flop1", "disk1.atr"),
+        JSMESSLoader.extraArgs([""]))
+    )
+    //emulator.mute();
+    emulator.start({ waitAfterDownloading: true });
+  </script>
+</body>
+
 </html>

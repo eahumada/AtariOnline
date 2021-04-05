@@ -5,6 +5,9 @@
     <title>example computer program</title>
   </head>
   <body>
+    <h2 style="text-align: center">ATARI ONLINE</h2>
+    <pre style="text-align: center">Controles: F1 = HELP, F2 = START, F3 = SELECT, F4 = OPTION</pre>
+    <pre style="text-align: center">FLECHAS = joystick, LEFT ALT = disparo.</pre>
     <canvas id="canvas" style="width: 75%; height: 75%; display: block; margin: 0 auto;"></canvas>
     <script type="text/javascript" src="../js/emularity/es6-promise.js"></script>
     <script type="text/javascript" src="../js/emularity/browserfs.min.js"></script>
@@ -28,35 +31,45 @@
         cart="joust.car";
       }
       
-      var mountCart = JSMESSLoader.mountFile(cart,JSMESSLoader.fetchFile("Cartridge",cart));
-      var cartPeripheral = JSMESSLoader.peripheral("cart1", cart);
+      if(cart!="") {
+        mountCart = JSMESSLoader.mountFile("cart1",JSMESSLoader.fetchFile("Cartridge",cart));
+        cartPeripheral = JSMESSLoader.peripheral("cart1", "cart1");
+      } else {
+        mountCart=undefined;
+        cartPeripheral=undefined;
+      }
 
-      var mountDisk = JSMESSLoader.mountFile("disk1.atr",JSMESSLoader.fetchFile("Disk",disk));
-      var diskPeripheral = JSMESSLoader.peripheral("flop1", "disk1.atr");
+      if(disk!="") {
+        mountDisk = JSMESSLoader.mountFile("disk1.atr",JSMESSLoader.fetchFile("Disk",disk));
+        diskPeripheral = JSMESSLoader.peripheral("flop1", "disk1.atr");
+      } else {
+        mountDisk=undefined;
+        diskPeripheral=undefined;
+      }
 
       var emulator = new Emulator(document.querySelector("#canvas"),
                                   null,
                                   new JSMESSLoader(JSMESSLoader.driver("a800xl"),
                                                    JSMESSLoader.nativeResolution(672, 450),
-                                                   JSMESSLoader.scale(1),
+                                                   JSMESSLoader.scale(1.2),
+                                                   JSMESSLoader.emulatorJS("../js/emulators/mame/mamea800xl.js"),
+                                                   JSMESSLoader.emulatorWASM("../js/emulators/mame/mamea800xl.wasm"),
                                                    JSMESSLoader.mountFile("a800xl.zip",
                                                                           JSMESSLoader.fetchFile("BIOS",
                                                                                                  "../emulators/mame/a800xl-bd.zip")),
                                                    JSMESSLoader.mountFile("a800xl.cfg",
-                                                                          JSMESSLoader.fetchFile("Configuration",
+                                                                          JSMESSLoader.fetchFile("Config",
                                                                                                  "../emulators/mame/a800xl.cfg")),
                                                    mountCart,
                                                    cartPeripheral,
                                                    mountDisk,
                                                    diskPeripheral,
-                                                   JSMESSLoader.emulatorJS("../js/emulators/mame/mamea800xl.js"),
-                                                   JSMESSLoader.emulatorWASM("../js/emulators/mame/mamea800xl.wasm"),
                                                    JSMESSLoader.extraArgs([""]))
                                                    )
                                                    
       //  emulator.mute();
 
-      emulator.start({ waitAfterDownloading: false });
+      emulator.start({ waitAfterDownloading: true });
     </script>
   </body>
 </html>
